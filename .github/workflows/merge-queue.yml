@@ -1,4 +1,4 @@
-name: Attacker-merge-queue-workflow
+name: Attacker2
 
 on:
   merge_group:
